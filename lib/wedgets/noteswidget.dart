@@ -12,7 +12,8 @@ class viewBody extends StatelessWidget {
           height:50 ,
         ),
         cappbar(),
-        item(),
+        noteslistview()
+        
       ],
     ),
     );
@@ -54,5 +55,15 @@ class item  extends StatelessWidget {
       ]
       ),
     );
+  }
+}
+
+class noteslistview extends StatelessWidget {
+  const noteslistview({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView.builder(itemBuilder: (context,index){
+    return const item();});
   }
 }
