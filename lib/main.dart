@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_notes/views/noteview.dart';
 void main() {
   runApp(const bavly());
 }
@@ -10,9 +10,7 @@ class bavly extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(brightness: Brightness.dark),
-      home: Scaffold(
-
-      ),
+      home: const view(),
     );
   }
 }
