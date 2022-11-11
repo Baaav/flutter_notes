@@ -60,10 +60,13 @@ class item  extends StatelessWidget {
 
 class noteslistview extends StatelessWidget {
   const noteslistview({super.key});
+final data=const{
 
+};  
   @override
   Widget build(BuildContext context) {
     return ListView.builder(itemBuilder: (context,index){
-    return const item();});
+    return const Padding(padding: EdgeInsets.symmetric(vertical: 4),
+    child: item(),);});
   }
 }

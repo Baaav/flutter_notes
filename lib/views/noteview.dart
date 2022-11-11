@@ -6,8 +6,10 @@ class view extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: viewBody(),
+    return  Scaffold(
+      floatingActionButton: floatingActionButton(
+        onPressed:(){},child:const Icon(Icons.add)  ),
+      body:const viewBody(),
     );
   }
 }
